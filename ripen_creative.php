@@ -79,7 +79,7 @@ add_action( 'wp_dashboard_setup', 'register_my_dashboard_widget' );
 function register_my_dashboard_widget() {
     wp_add_dashboard_widget(
         'support_contact',
-        'Contact Support Team',
+        'Have a question? Fill out the form below!',
         'my_dashboard_widget_display'
     );
 
@@ -113,7 +113,6 @@ add_action('wp_dashboard_setup', 'remove_dashboard_widgets', 999 );
 
 // Automatically set permalink structure
 
-// set permalink
 function set_permalink(){
     global $wp_rewrite;
     $wp_rewrite->set_permalink_structure('/%category%/%postname%/');
