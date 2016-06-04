@@ -40,8 +40,8 @@ function remove_admin_bar_links() {
     global $wp_admin_bar;
     $wp_admin_bar->remove_menu('wp-logo');
     $wp_admin_bar->remove_menu('updates');
-    $wp_admin_bar->remove_menu('post-new.php');
-    $wp_admin_bar->remove_menu('edit-comments.php');
+    $wp_admin_bar->remove_menu('new-content');
+    $wp_admin_bar->remove_menu('comments');
     $wp_admin_bar->remove_menu('imagify');
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
