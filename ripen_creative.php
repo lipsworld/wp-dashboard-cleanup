@@ -120,5 +120,4 @@ function set_permalink(){
 
 add_action('init', 'set_permalink');
 
-
 ?>
