@@ -8,7 +8,7 @@ License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
 GitHub Plugin URI: https://github.com/ripencreative/multisite-plugin
-GitHub Branch:     master
+GitHub Branch: master
 */
 
 //Remove Non Essential Items from Default Admin Menu
