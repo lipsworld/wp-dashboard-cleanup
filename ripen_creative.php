@@ -105,7 +105,7 @@ function remove_dashboard_widgets() {
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
     unset($wp_meta_boxes['dashboard']['normal']['core']['rg_forms_dashboard']);
-    unset($wp_meta_boxes['dashboard']['normal']['high']['dashboard_welcome']);
+    unset($wp_meta_boxes['dashboard']['normal']['high']['welcome_panel']);
 
 }
 
