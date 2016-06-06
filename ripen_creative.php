@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: RIPEn Creative Multisite Functions
-Plugin URI: https://github.com/ripencreative/RIPEnCreativeMultisitePlugin
+Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
 Version: 1.0.0
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
-GitHub Plugin URI: https://github.com/ripencreative/RIPEnCreativeMultisitePlugin
+GitHub Plugin URI: https://github.com/ripencreative/multisite-plugin
 GitHub Branch:     master
 */
 
