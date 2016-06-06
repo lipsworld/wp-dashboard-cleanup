@@ -3,7 +3,7 @@
 Plugin Name: RIPEn Creative Multisite Functions
 Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
-Version: 1.0.0
+Version: 1.0.1
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
@@ -47,32 +47,6 @@ function remove_admin_bar_links() {
     $wp_admin_bar->remove_menu('imagify');
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
-
-// Move admin bar to the bottom of the screen
-
-function move_admin_bar() {
-    echo '<style type="text/css">
-    body {
-        margin-top: -28px;
-        padding-bottom: 28px;
-    }
-    body.admin-bar #wphead {
-        padding-top: 0;
-    }
-    body.admin-bar #footer {
-        padding-bottom: 28px;
-    }
-    #wpadminbar {
-        top: auto !important;
-        bottom: 0;
-    }
-    #wpadminbar .quicklinks .menupop ul {
-        bottom: 28px;
-    }
-    </style>';
-}
-add_action( 'admin_head', 'move_admin_bar' );
-add_action( 'wp_head', 'move_admin_bar' );
 
 // Add Support Contact Widget To Dashboard
 
