@@ -1,7 +1,7 @@
 === RIPEn Creative Multisite Custom Plugin ===
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 
 This plugin adds functions and customizations for the websites created at RIPEn Creative.
 
