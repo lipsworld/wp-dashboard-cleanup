@@ -3,7 +3,7 @@
 Plugin Name: RIPEn Creative Multisite Functions
 Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
-Version: 1.1.0
+Version: 1.1.1
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
@@ -32,6 +32,7 @@ function remove_menus() {
     remove_submenu_page('gf_edit_forms' ,'gf_export');
     remove_submenu_page('gf_edit_forms' ,'gf_addons');
     remove_submenu_page('gf_edit_forms' ,'gf_help');
+    remove_submenu_page( 'options-general.php', 'duplicatepost' );
 }
 
 add_action( 'admin_menu', 'remove_menus', 999 );
