@@ -3,7 +3,7 @@
 Plugin Name: RIPEn Creative Multisite Functions
 Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
-Version: 1.1.1
+Version: 1.1.2
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
