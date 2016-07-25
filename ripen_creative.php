@@ -3,7 +3,7 @@
 Plugin Name: RIPEn Creative Multisite Functions
 Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
-Version: 1.1.3
+Version: 1.2
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
@@ -42,7 +42,6 @@ function remove_admin_bar_links() {
     $wp_admin_bar->remove_menu('updates');
     $wp_admin_bar->remove_menu('new-content');
     $wp_admin_bar->remove_menu('comments');
-    $wp_admin_bar->remove_menu('imagify');
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
@@ -102,5 +101,33 @@ function defer_parsing_of_js ( $url ) {
     return "$url' defer='defer";
   }
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
+
+// RSS Feed Widget for latest news
+
+add_action('wp_dashboard_setup', 'organicweb_dashboard_widgets');
+
+function organicweb_dashboard_widgets() {
+// CHANGE 'OrganicWeb News' BELOW TO THE TITLE OF YOUR WIDGET
+wp_add_dashboard_widget( 'dashboard_custom_feed', 'WordPress News', 'organicweb_custom_feed_output' );
+
+function organicweb_custom_feed_output() {
+echo '<div class="rss-widget">';
+wp_widget_rss_output(array(
+// CHANGE THE URL BELOW TO THAT OF YOUR FEED
+'url' => 'https://managewp.org/articles.rss',
+// CHANGE 'OrganicWeb News' BELOW TO THE NAME OF YOUR WIDGET
+'title' => 'WordPress News',
+// CHANGE '2' TO THE NUMBER OF FEED ITEMS YOU WANT SHOWING
+'items' => 5,
+// CHANGE TO '0' IF YOU ONLY WANT THE TITLE TO SHOW
+'show_summary' => 1,
+// CHANGE TO '1' TO SHOW THE AUTHOR NAME
+'show_author' => 0,
+// CHANGE TO '1' TO SHOW THE PUBLISH DATE
+'show_date' => 0
+));
+echo "</div>";
+}
+}
 
 ?>
