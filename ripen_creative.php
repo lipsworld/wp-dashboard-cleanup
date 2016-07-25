@@ -29,9 +29,6 @@ function remove_menus() {
     remove_submenu_page( 'index.php', 'my-sites.php' );
     remove_submenu_page('revslider' ,'revslider_navigation');
     remove_submenu_page('revslider' ,'rev_addon');
-    remove_submenu_page('gf_edit_forms' ,'gf_export');
-    remove_submenu_page('gf_edit_forms' ,'gf_addons');
-    remove_submenu_page('gf_edit_forms' ,'gf_help');
     remove_submenu_page( 'options-general.php', 'duplicatepost' );
 }
 
