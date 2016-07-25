@@ -3,7 +3,7 @@
 Plugin Name: RIPEn Creative Multisite Functions
 Plugin URI: https://github.com/ripencreative/multisite-plugin
 Description: Customizations for Multisites
-Version: 1.1.2
+Version: 1.1.3
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
@@ -49,7 +49,7 @@ function remove_admin_bar_links() {
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
-// Add Support Contact Widget To Dashboard
+// Add Support Contact Widget To Dashboard - Ninja Forms Form
 
 add_action( 'wp_dashboard_setup', 'register_my_dashboard_widget' );
 
@@ -61,9 +61,9 @@ function register_my_dashboard_widget() {
     );
 
 }
-
+// Change the number in brackets for the Ninja Form Form #
 function my_dashboard_widget_display() {
-    gravity_form('Support Widget', false, false, false, '', false);
+    if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
 }
 
 // Remove Default Widgets from WordPress Dashboard
