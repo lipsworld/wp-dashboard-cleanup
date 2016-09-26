@@ -36,7 +36,7 @@ function remove_menus() {
     remove_submenu_page( 'options-general.php', 'duplicatepost' );
     remove_submenu_page( 'options-general.php', 'github-updater' );
     remove_submenu_page( 'options-general.php', 'options-general.php' );
-    remove_submenu_page( 'post-type=envira', 'envira-gallery-settings' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
     remove_submenu_page( 'post-type=envira', 'envira-gallery-addons' );
 }
 
