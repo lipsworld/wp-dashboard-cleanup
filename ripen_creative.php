@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: RIPEn Creative Multisite Functions
+Plugin Name: RIPEn Creative Menu and Dashboard Cleanup
 Plugin URI: https://github.com/ripencreative/multisite-plugin
-Description: Customizations for Multisites
+Description: Customizations for Client Websites
 Version: 1.2
 License: GPL
 Author: Brian Morris
@@ -83,24 +83,6 @@ function remove_dashboard_widgets() {
 }
 
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets', 999 );
-
-// Automatically set permalink structure
-
-function set_permalink(){
-    global $wp_rewrite;
-    $wp_rewrite->set_permalink_structure('/%category%/%postname%/');
-}
-
-add_action('init', 'set_permalink');
-
-// Defer Parsing of JavaScript
-
-function defer_parsing_of_js ( $url ) {
-    if ( FALSE === strpos( $url, '.js' ) ) return $url;
-    if ( strpos( $url, 'jquery.min.js' ) ) return $url;
-    return "$url' defer='defer";
-  }
-add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 
 // RSS Feed Widget for latest news
 
