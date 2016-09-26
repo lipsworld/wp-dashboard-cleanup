@@ -38,7 +38,6 @@ function remove_menus() {
     remove_submenu_page( 'options-general.php', 'github-updater' );
     remove_submenu_page( 'options-general.php', 'options-general.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-    remove_submenu_page( 'post-type=envira', 'envira-gallery-addons' );
 }
 
 add_action( 'admin_menu', 'remove_menus', 999 );
@@ -69,7 +68,7 @@ function register_my_dashboard_widget() {
 }
 // Change the number in brackets for the Ninja Form Form #
 function my_dashboard_widget_display() {
-    if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 3 ); }
+    if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form(3); }
 }
 
 // Remove Default Widgets from WordPress Dashboard
