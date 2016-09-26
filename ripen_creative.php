@@ -50,6 +50,7 @@ function remove_admin_bar_links() {
     $wp_admin_bar->remove_menu('updates');
     $wp_admin_bar->remove_menu('new-content');
     $wp_admin_bar->remove_menu('comments');
+    $wp_admin_bar->remove_menu('wpseo_dashboard');
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
