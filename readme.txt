@@ -1,13 +1,13 @@
 === RIPEn Creative Multisite Custom Plugin ===
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 
 This plugin adds functions and customizations for the websites created at RIPEn Creative.
 
 == Description ==
 
-Plugin description, any special instructions. If nothing else, include the URL of the site that this plugin belongs to.
+This plugin cleans up the default WordPress dashboard and adds a support form in the dashboard.
 
 == Important Notes ==
 
@@ -15,6 +15,10 @@ Remember to activate this at all websites except for primary network website.
 
 
 == Changelog ==
+
+= 1.2.0 = 
+
+Name change and removal of multisite related functions.
 
 = 1.0.0 =
 
