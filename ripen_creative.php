@@ -34,6 +34,10 @@ function remove_menus() {
     remove_submenu_page('revslider' ,'revslider_navigation');
     remove_submenu_page('revslider' ,'rev_addon');
     remove_submenu_page( 'options-general.php', 'duplicatepost' );
+    remove_submenu_page( 'options-general.php', 'github-updater' );
+    remove_submenu_page( 'options-general.php', 'options-general.php' );
+    remove_submenu_page( 'envira', 'envira-gallery-settings' );
+    remove_submenu_page( 'envira', 'envira-gallery-addons' );
 }
 
 add_action( 'admin_menu', 'remove_menus', 999 );
