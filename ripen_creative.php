@@ -108,7 +108,7 @@ wp_widget_rss_output(array(
 // CHANGE 'OrganicWeb News' BELOW TO THE NAME OF YOUR WIDGET
 'title' => 'WordPress News',
 // CHANGE '2' TO THE NUMBER OF FEED ITEMS YOU WANT SHOWING
-'items' => 5,
+'items' => 3,
 // CHANGE TO '0' IF YOU ONLY WANT THE TITLE TO SHOW
 'show_summary' => 1,
 // CHANGE TO '1' TO SHOW THE AUTHOR NAME
