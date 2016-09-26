@@ -68,7 +68,7 @@ function register_my_dashboard_widget() {
 }
 // Change the number in brackets for the Ninja Form Form #
 function my_dashboard_widget_display() {
-    if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
+    if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 3 ); }
 }
 
 // Remove Default Widgets from WordPress Dashboard
