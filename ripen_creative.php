@@ -21,6 +21,7 @@ function remove_menus() {
     remove_menu_page('wpseo_dashboard');
     remove_menu_page('Wordfence');
     remove_menu_page('WP-Optimize');
+    remove_menu_page('options-general.php');
     remove_submenu_page('options-general.php','options-writing.php');
     remove_submenu_page('users.php','user-new.php');
     remove_submenu_page('options-general.php','options-reading.php');
