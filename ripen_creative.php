@@ -17,6 +17,10 @@ function remove_menus() {
     remove_menu_page('link-manager.php');
     remove_menu_page('tools.php');
     remove_menu_page('cornerstone-home');
+    remove_menu_page('x-addons-home');
+    remove_menu_page('wpseo_dashboard');
+    remove_menu_page('Wordfence');
+    remove_menu_page('WP-Optimize');
     remove_submenu_page('options-general.php','options-writing.php');
     remove_submenu_page('users.php','user-new.php');
     remove_submenu_page('options-general.php','options-reading.php');
